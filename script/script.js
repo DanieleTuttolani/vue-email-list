@@ -7,7 +7,7 @@ const app = Vue.createApp({
     methods:{
         getEmail(){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .this((response) =>{
+            .then((response) =>{
                 this.emails.push(response.data.response)
                 
             })
